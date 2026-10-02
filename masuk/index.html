@@ -19,13 +19,47 @@
 <meta name="twitter:image" content="https://jujuai-collabs.github.io/PTP/masuk/cover.jpg">
 
 <style>
-body { margin:0; background:#000; display:flex; justify-content:center; align-items:center; min-height:100vh; }
-img { max-width:100%; height:auto; cursor:pointer; display:block; }
+body {
+  margin:0;
+  background:#000;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+}
+
+.poster {
+  position:relative;
+  display:block;
+  max-width:100%;
+}
+
+.poster img {
+  max-width:100%;
+  height:auto;
+  cursor:pointer;
+  display:block;
+}
+
+.hint {
+  position:absolute;
+  right:18px;
+  bottom:18px;
+  padding:7px 12px;
+  border-radius:999px;
+  background:rgba(0,0,0,.62);
+  color:#fff;
+  font:600 14px/1.2 Arial,sans-serif;
+  letter-spacing:.4px;
+  text-shadow:0 1px 2px #000;
+  pointer-events:none;
+}
 </style>
 </head>
 <body>
-<a href="https://jujuai-collabs.github.io/PERPUSTAKAAN-TANPA-PINTU/" aria-label="Masuk ke Perpustakaan Tanpa Pintu">
-<img src="cover.jpg" alt="PERPUSTAKAAN TANPA PINTU - ketuk untuk masuk">
+<a class="poster" href="https://jujuai-collabs.github.io/PERPUSTAKAAN-TANPA-PINTU/" aria-label="Masuk ke Perpustakaan Tanpa Pintu">
+  <img src="cover.jpg" alt="PERPUSTAKAAN TANPA PINTU - ketuk untuk masuk">
+  <span class="hint">TAP DI SINI →</span>
 </a>
 </body>
 </html>
