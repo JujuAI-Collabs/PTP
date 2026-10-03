@@ -52,15 +52,28 @@ body {
   font-weight:500;
   letter-spacing:.6px;
   text-shadow:0 2px 5px rgba(0,0,0,.9);
-  transform:rotate(-4deg);
+  pointer-events:none;
+}
+
+.audio {
+  position:absolute;
+  width:1px;
+  height:1px;
+  opacity:0;
   pointer-events:none;
 }
 </style>
 </head>
 <body>
+
 <a class="poster" href="https://jujuai-collabs.github.io/PERPUSTAKAAN-TANPA-PINTU/" aria-label="Masuk ke Perpustakaan Tanpa Pintu">
   <img src="cover.jpg" alt="PERPUSTAKAAN TANPA PINTU - ketuk untuk masuk">
   <span class="hint">Tap di sini →</span>
 </a>
+
+<audio class="audio" autoplay loop playsinline preload="auto">
+  <source src="https://jujuai-collabs.github.io/PERPUSTAKAAN-TANPA-PINTU/audio-ptp.mp3" type="audio/mpeg">
+</audio>
+
 </body>
 </html>
