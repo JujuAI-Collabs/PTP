@@ -29,5 +29,14 @@ img{display:block;width:100%;height:auto}
 </a>
 <script data-goatcounter="https://ptpjuju.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <script data-goatcounter="https://ptpjuju.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<audio id="ptpAtmosphere" class="audio" autoplay playsinline preload="auto"><source src="https://jujuai-collabs.github.io/PERPUSTAKAAN-TANPA-PINTU/audio-ptp.mp3" type="audio/mpeg"></audio>
+<script>
+(function(){
+  const audio=document.getElementById('ptpAtmosphere');
+  if(!audio)return;
+  audio.loop=false;
+  audio.addEventListener('timeupdate',function(){if(audio.currentTime>=10){audio.currentTime=0;audio.play().catch(()=>{});}}, {passive:true});
+})();
+</script>
 </body>
 </html>
